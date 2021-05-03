@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of result">
+            <td>{{user.id}}</td>
+            <td>{{user.title}}</td>
+            <!--<td><button (click)="redirect(user.id)">Redirect</button></td>-->
+            <td><button (click)="redirectWithObj(user)">Redirect</button></td>
+        </tr>
+    </tbody>
+</table>
