@@ -1,0 +1,361 @@
+<div class="right-content">
+                    <div class="row" id="topnav">
+                        <div class="col-md-12 py-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="row" id="top-breadcrumb">
+                                        <div class="col-sm-auto">
+                                            Lessee / Licence Register
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wrapper">
+                        
+    <div class="row" id="topbtncontainer">
+        <div class="col-sm-12 col text-right" id="btnGroupCRUD">
+            <div class="top-btn-group text-sm-right text-center mr-md-3">
+                
+
+                <button type="button" data-button="edit" onclick="FN_edit()" id="btnEdit" class="btn btn-edit disabled"><i class="fa fa-pen btn-icon"></i>Edit</button>
+                <button type="button" data-button="cancel" onclick="FN_clear()" id="btnClear" class="btn mx-2 btn-delete disabled"><i class="fa fa-times btn-icon"></i>Clear</button>
+                <button type="button" data-button="Saveupdate" id="btnSaveUpdate" class="btn btn-submit disabled"><i class="fa fa-sign-out-alt btn-icon"></i><span>SUBMIT</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="dash_outer" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-4" style="box-shadow: 0 0 11px #ccc; border: none;">
+                    <div class="card-body">
+                        <div class="row" id="LesseeRegFrm">
+
+                            <div class="col-lg-12">
+                                <div class="dash_content__left row" data-scope="edit">
+                                    <div class="col-md-5">
+                                        <div class="row">
+                                            
+                                            <div class=" col-lg-5 pr-0">
+                                                <p style="font-weight: 600; font-size: 14px; margin-top: 8px; margin-left: 0.9rem!important; color: #434343;" class="d-inline-block customNoWrap">Applicant type:</p>
+                                            </div>
+                                            <div class="col-lg-7 pl-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input class="custom-control-input" type="radio" data-entry="licenseeType" onclick="FN_licenseeType(true)" name="licenseeType" id="licenseeType1" value="Individual" checked="" autocomplete="off">
+                                                    <label class="custom-control-label" for="licenseeType1">Individual</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input class="custom-control-input" type="radio" data-entry="licenseeType" onclick="FN_licenseeType(false)" name="licenseeType" id="licenseeType2" value="Organization" autocomplete="off">
+                                                    <label class="custom-control-label" for="licenseeType2">Organization</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-5 col-md-4 col-form-label lbldistrict requiredlabel" for="district">District:<i class="fa fa-asterisk"></i></label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <div class="dropdown bootstrap-select form-control"><select data-entry="district" id="district" data-required="bs" class="form-control" tabindex="-98"><option value="">Select District</option><option value="8">Ahmednagar</option><option value="17">Akola</option><option value="18">Amravati</option><option value="10">Aurangabad</option><option value="11">Beed</option><option value="25">Bhandara</option><option value="19">Buldhana</option><option value="26">Chandrapur</option><option value="21">Dhule</option><option value="27">Gadchiroli</option><option value="28">Gondia</option><option value="12">Hingoli</option><option value="22">Jalgaon</option><option value="13">Jalna</option><option value="9">Kolhapur</option><option value="14">Latur</option><option value="36">MumbaiCity</option><option value="31">MumbaiSuburban</option><option value="29">Nagpur</option><option value="15">Nanded</option><option value="23">Nandurbar</option><option value="24">Nashik</option><option value="16">Osmanabad</option><option value="37">Palghar</option><option value="5">Parbhani</option><option value="1">Pune</option><option value="32">Raigad</option><option value="33">Ratnagiri</option><option value="2">Sangli</option><option value="3">Satara</option><option value="34">Sindhudurg</option><option value="7">Solapur</option><option value="35">Thane</option><option value="30">Wardha</option><option value="20">Washim</option><option value="6">Yavatmal</option></select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="district" title="Select District"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Select District</div></div> </div></button><div class="dropdown-menu " style="max-height: 364px; overflow: hidden;"><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-4" aria-autocomplete="list" aria-activedescendant="bs-select-4-0"></div><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1" style="max-height: 320px; overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-4-0" tabindex="0" aria-setsize="37" aria-posinset="1" aria-selected="true"><span class="text">Select District</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-1" tabindex="0"><span class="text">Ahmednagar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-2" tabindex="0"><span class="text">Akola</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-3" tabindex="0"><span class="text">Amravati</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-4" tabindex="0"><span class="text">Aurangabad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-5" tabindex="0"><span class="text">Beed</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-6" tabindex="0"><span class="text">Bhandara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-7" tabindex="0"><span class="text">Buldhana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-8" tabindex="0"><span class="text">Chandrapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-9" tabindex="0"><span class="text">Dhule</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-10" tabindex="0"><span class="text">Gadchiroli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-11" tabindex="0"><span class="text">Gondia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-12" tabindex="0"><span class="text">Hingoli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-13" tabindex="0"><span class="text">Jalgaon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-14" tabindex="0"><span class="text">Jalna</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-15" tabindex="0"><span class="text">Kolhapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-16" tabindex="0"><span class="text">Latur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-17" tabindex="0"><span class="text">MumbaiCity</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-18" tabindex="0"><span class="text">MumbaiSuburban</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-19" tabindex="0"><span class="text">Nagpur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-20" tabindex="0"><span class="text">Nanded</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-21" tabindex="0"><span class="text">Nandurbar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-22" tabindex="0"><span class="text">Nashik</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-23" tabindex="0"><span class="text">Osmanabad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-24" tabindex="0"><span class="text">Palghar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-25" tabindex="0"><span class="text">Parbhani</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-26" tabindex="0"><span class="text">Pune</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-27" tabindex="0"><span class="text">Raigad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-28" tabindex="0"><span class="text">Ratnagiri</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-29" tabindex="0"><span class="text">Sangli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-30" tabindex="0"><span class="text">Satara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-31" tabindex="0"><span class="text">Sindhudurg</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-32" tabindex="0"><span class="text">Solapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-33" tabindex="0"><span class="text">Thane</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-34" tabindex="0"><span class="text">Wardha</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-35" tabindex="0"><span class="text">Washim</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-4-36" tabindex="0"><span class="text">Yavatmal</span></a></li></ul></div></div></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-5 col-md-4 col-form-label lblName requiredlabel" for="txtName">Name:<i class="fa fa-asterisk"></i></label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" class="form-control validate-alphanumericWithSpaceAndSomeSpecialChars text-capitalize validate-length" data-required="bs" data-entry="txtName" length="200" id="txtName" placeholder="Lessee/Licence Name" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-5 col-md-4 col-form-label lblMobile requiredlabel" for="txtMobile">Mobile No.:<i class="fa fa-asterisk"></i></label>
+                                            
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" id="txtMobile" data-entry="txtMobile" data-required="bs" class="form-control validate-number validate-length validate-min-length" minlength="10" maxlength="10" length="10" placeholder="Mobile Number" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-5 col-md-4 col-form-label lblAddress requiredlabel" for="txtAddress">Address:<i class="fa fa-asterisk"></i></label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" class="form-control validate-length validate-alphanumericWithSpaceAndSomeSpecialChars text-capitalize" data-entry="txtAddress" data-required="bs" length="200" id="txtAddress" placeholder="Lessee/Licence Address" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-5 col-md-4 col-form-label" for="txtEmail">Email Id:</label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="email" class="form-control" id="txtEmail" placeholder="Email Id" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row divInd">
+                                            <label class="col-lg-5 col-md-4 pr-0 col-form-label" for="txtLandline">Landline No.:</label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" class="form-control validate-number validate-min-length" minlength="11" maxlength="11" length="11" data-entry="txtLandline" id="txtLandline" placeholder="Landline No." autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row divOrg" style="display: none;">
+                                            <label class="col-lg-5 col-md-4 pr-0 col-form-label lblorganizationType requiredlabel" for="organizationType">Org. Type:<i class="fa fa-asterisk"></i></label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <div class="dropdown bootstrap-select form-control"><select class="form-control" data-required="bs" data-entry="organizationType" id="organizationType" tabindex="-98"><option value="">Select Organization Type</option><option class="fontWeight600" value="1">Proprietorship</option><option class="fontWeight600" value="2">Partnership Firm</option><option class="fontWeight600" value="3">Private Limited</option><option class="fontWeight600" value="4">Public Limited</option><option class="fontWeight600" value="5">Co-operative </option><option class="fontWeight600" value="6">LLP</option></select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="organizationType" title="Select Organization Type"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Select Organization Type</div></div> </div></button><div class="dropdown-menu " style="overflow: hidden;"><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1" aria-activedescendant="bs-select-2-0" style="overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-2-0" tabindex="0" aria-setsize="7" aria-posinset="1" aria-selected="true"><span class="text">Select Organization Type</span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-1" tabindex="0"><span class="text">Proprietorship</span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-2" tabindex="0"><span class="text">Partnership Firm</span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-3" tabindex="0"><span class="text">Private Limited</span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-4" tabindex="0"><span class="text">Public Limited</span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-5" tabindex="0"><span class="text">Co-operative </span></a></li><li><a role="option" class="dropdown-item fontWeight600" id="bs-select-2-6" tabindex="0"><span class="text">LLP</span></a></li></ul></div></div></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row divOrg" style="display: none;">
+                                            <label class="col-lg-5 col-md-4 pr-0 col-form-label lblcontactPersonName requiredlabel" for="contactPersonName">Contact Person Name:<i class="fa fa-asterisk"></i></label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" class="form-control validate-alphabets text-capitalize validate-length" data-required="bs" length="50" data-entry="contactPersonName" id="contactPersonName" placeholder="Contact Person Name" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row divOrg" style="display: none;">
+                                            <label class="col-lg-5 col-md-4 pr-0 col-form-label lblcontactPersonMobileNo requiredlabel" for="contactPersonMobileNo">Contact Person Mobile No.:</label>
+                                            <div class="col-lg-7 col-md-8">
+                                                <input type="text" class="form-control validate-number validate-min-length" minlength="10" maxlength="10" length="10" data-entry="contactPersonMobileNo" id="contactPersonMobileNo" placeholder="Contact Person Mobile Number" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="table-content">
+                                            <table class="table dataContentTable dashboard-table">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th style="width: 162px;">Document Name</th>
+                                                        <th style="width: 246px;">Document Number</th>
+                                                        <th style="width: 150px;"></th>
+                                                        <th class="text-left"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tblDocs">
+                                                    <tr class="form-group">
+                                                        <td>
+                                                            <label for="PanTxt" class=" m-0 font-weight-bold">
+                                                                <span>Profile Photo</span>:
+                                                            </label>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png" data-docutype="Profile" data-entry="Profile" id="Profile" autocomplete="off">
+                                                                <label tabindex="0" for="Pan" class="custom-file-label"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+                                                            <a href="" target="_blank" id="ProfilePath" class="form-text links text-muted mb-1 hide" title="" style="display: none;"><i class="fa fa-file-alt text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="ProfileImg" alt="Document Uploaded Successfully" title="Profile Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="ProfileImgDelete" alt="Delete Uploaded Profile" title="Delete Uploaded Profile" onclick="onClickDeleteUploadedDoc('Profile')">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="form-group">
+                                                        <td>
+                                                            <label for="PanTxt" class="requiredlabel m-0 font-weight-bold">
+                                                                <span id="lblPAN">PAN <span style="font-size: 10px; color: #dc3545 !important" class="">(PAN no. &amp; PAN document mandatory)</span>
+                                                                    :<span class="fa fa-asterisk"></span></span>
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control text-uppercase validate-alphanumeric" data-required="bs" maxlength="10" length="10" id="PanTxt" onblur="onBlurPan(this)" placeholder="PAN Number" data-entry="PanTxt" autocomplete="off">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="Pan" data-docutype="Pan" data-docutypeid="1" autocomplete="off">
+                                                                <label tabindex="0" for="Pan" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="PanPath" class="form-text links text-muted mb-1 hide" title="" style="display: none;"><i class="fa fa-file-alt text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="PanImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="PanImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('Pan')">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="divInd">
+                                                        <td>
+                                                            <label for="AadharTxt" class="m-0 font-weight-bold"><span id="lblAadhar">Aadhar</span>:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control validate-number validate-min-length" minlength="12" maxlength="12" id="AadharTxt" placeholder="Aadhar Number" data-entry="AadharTxt" autocomplete="off">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="Aadhar" data-docutypeid="2" data-docutype="Aadhar" autocomplete="off">
+                                                                <label tabindex="0" for="Aadhar" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="AadharPath" class="form-text links text-muted mb-1 hide" title="" style="display: none;"><i class="fa fa-file-alt  text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="AadharImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="AadharImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('Aadhar')">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="GSTTxt" class="m-0 font-weight-bold"><span id="lblGST">GST</span>:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control validate-alphanumeric  validate-gst text-uppercase" placeholder="GST Number" maxlength="15" id="GSTTxt" data-entry="GSTTxt" autocomplete="off">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="GST" data-docutypeid="3" data-docutype="GST" autocomplete="off">
+                                                                <label tabindex="0" for="GST" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="GSTPath" class="form-text links text-muted mb-1 hide" title="" style="display: none;"><i class="fa fa-file-alt  text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="GSTImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="GSTImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('GST')">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="divOrg" style="display: none;">
+                                                        <td>
+                                                            <label for="IncorporationCertificateTxt" class="m-0 font-weight-bold"><span id="lblCntIncorporationCertificate">Incorporation Certificate</span>:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control hasDatepicker" id="IncorporationCertificateTxt" style="max-width: calc(100% - 34px); display: inline;" placeholder="Incorporation Date" data-entry="IncorporationCertificateTxt" autocomplete="off"><button type="button" class="ui-datepicker-trigger"><img src="http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" alt="Select date" title="Select date"></button>
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="IncorporationCertificate" data-docutypeid="4" data-docutype="IncorporationCertificate" autocomplete="off">
+                                                                <label tabindex="0" for="IncorporationCertificate" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="IncorporationCertificatePath" class="form-text hide links text-muted mb-1" title="" style="display: none;"><i class="fa fa-file-alt  text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="IncorporationCertificateImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="IncorporationCertificateImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('IncorporationCertificate')">
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="divOrg" style="display: none;">
+                                                        <td>
+                                                            <label for="ShopActTxt" class="m-0 font-weight-bold"><span id="lblCntShopActLocalBodyCertificate">Shop Act/ Local Body Certificate</span>:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control validate-number validate-min-length" minlength="10" maxlength="15" id="ShopActTxt" placeholder="Shop Act/ Local Body Certificate" data-entry="ShopActTxt" autocomplete="off">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="ShopAct" data-docutypeid="5" data-docutype="ShopAct" autocomplete="off">
+                                                                <label tabindex="0" for="ShopAct" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="ShopActPath" class="form-text links text-muted hide mb-1" title="" style="display: none;"><i class="fa fa-file-alt  text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="ShopActImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="ShopActImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('ShopAct')">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="divOrg" id="partnershipDeedDiv" style="display: none;">
+                                                        <td>
+                                                            <label for="PartnershipDeedTxt" class="m-0 font-weight-bold"><span id="lblCntPartnershipDeedCertificate">Partnership Deed Certificate</span>:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control validate-number validate-min-length" minlength="10" maxlength="15" id="PartnershipDeedTxt" placeholder="Partnership Deed Certificate" data-entry="PartnershipDeedTxt" autocomplete="off">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input uploadDoc" accept=".jpg,.jpeg,.png,.pdf" id="PartnershipDeed" data-docutypeid="6" data-docutype="PartnershipDeed" autocomplete="off">
+                                                                <label tabindex="0" for="PartnershipDeed" class="custom-file-label "></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-flex justify-content-center align-items-center">
+
+                                                            <a href="" target="_blank" id="PartnershipDeedPath" class="form-text links hide text-muted mb-1" title="" style="display: none;"><i class="fa fa-file-alt  text-primary"></i></a>
+                                                            <img src="images/success.svg" class="uploadDocImg mx-3" style="height: 25px; width: 25px; display: none;" id="PartnershipDeedImg" alt="Document Uploaded Successfully" title="Document Uploaded Successfully">
+                                                            <img class="uploadDocBtn" src="images/close_upload_file.svg" style="height: 25px; width: 25px; cursor: pointer; display: none;" id="PartnershipDeedImgDelete" alt="Delete Uploaded Document" title="Delete Uploaded Document" onclick="onClickDeleteUploadedDoc('PartnershipDeed')">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-12 mt-3 text-right">
+                                            <p style="font-weight: 600; font-size: 14px; color: #434343;" class="d-inline-block mr-4">Details Completed: </p>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input class="custom-control-input" type="radio" data-entry="isCompleted" name="isCompleted" id="isCompletedYes" value="true" checked="checked" autocomplete="off">
+                                                <label class="custom-control-label" for="isCompletedYes">Yes</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input class="custom-control-input" type="radio" data-entry="isCompleted" name="isCompleted" id="isCompletedNo" value="false" autocomplete="off">
+                                                <label class="custom-control-label" for="isCompletedNo">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="mainFilter">
+                            <div class="col-md-12">
+                                <div class="dash_filter mt-4">
+                                    <div class="filter-form">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="dropdown bootstrap-select form-control"><select data-entry="LesseeTM  ; VypeFilter" id="LesseeTypeFilter" class="form-control selectpicker" tabindex="-98">
+                                                    <option value="">All Lessee/Licence Type</option>
+                                                    <option value="Individual">Individual</option>
+                                                    <option value="Organization">Organization</option>
+                                                </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-7" aria-haspopup="listbox" aria-expanded="false" data-id="LesseeTypeFilter" title="All Lessee/Licence Type"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All Lessee/Licence Type</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-7" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="dropdown bootstrap-select form-control dropup"><select data-entry="DistrictFilter" id="DistrictFilter" class="form-control" tabindex="-98"><option value="">All District</option><option value="8">Ahmednagar</option><option value="17">Akola</option><option value="18">Amravati</option><option value="10">Aurangabad</option><option value="11">Beed</option><option value="25">Bhandara</option><option value="19">Buldhana</option><option value="26">Chandrapur</option><option value="21">Dhule</option><option value="27">Gadchiroli</option><option value="28">Gondia</option><option value="12">Hingoli</option><option value="22">Jalgaon</option><option value="13">Jalna</option><option value="9">Kolhapur</option><option value="14">Latur</option><option value="36">MumbaiCity</option><option value="31">MumbaiSuburban</option><option value="29">Nagpur</option><option value="15">Nanded</option><option value="23">Nandurbar</option><option value="24">Nashik</option><option value="16">Osmanabad</option><option value="37">Palghar</option><option value="5">Parbhani</option><option value="1">Pune</option><option value="32">Raigad</option><option value="33">Ratnagiri</option><option value="2">Sangli</option><option value="3">Satara</option><option value="34">Sindhudurg</option><option value="7">Solapur</option><option value="35">Thane</option><option value="30">Wardha</option><option value="20">Washim</option><option value="6">Yavatmal</option></select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-6" aria-haspopup="listbox" aria-expanded="false" data-id="DistrictFilter" title="All District"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All District</div></div> </div></button><div class="dropdown-menu " style="max-height: 364px; overflow: hidden;"><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-6" aria-autocomplete="list" aria-activedescendant="bs-select-6-0"></div><div class="inner show" role="listbox" id="bs-select-6" tabindex="-1" style="max-height: 320px; overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-6-0" tabindex="0" aria-setsize="37" aria-posinset="1" aria-selected="true"><span class="text">All District</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-1" tabindex="0"><span class="text">Ahmednagar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-2" tabindex="0"><span class="text">Akola</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-3" tabindex="0"><span class="text">Amravati</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-4" tabindex="0"><span class="text">Aurangabad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-5" tabindex="0"><span class="text">Beed</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-6" tabindex="0"><span class="text">Bhandara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-7" tabindex="0"><span class="text">Buldhana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-8" tabindex="0"><span class="text">Chandrapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-9" tabindex="0"><span class="text">Dhule</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-10" tabindex="0"><span class="text">Gadchiroli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-11" tabindex="0"><span class="text">Gondia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-12" tabindex="0"><span class="text">Hingoli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-13" tabindex="0"><span class="text">Jalgaon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-14" tabindex="0"><span class="text">Jalna</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-15" tabindex="0"><span class="text">Kolhapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-16" tabindex="0"><span class="text">Latur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-17" tabindex="0"><span class="text">MumbaiCity</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-18" tabindex="0"><span class="text">MumbaiSuburban</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-19" tabindex="0"><span class="text">Nagpur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-20" tabindex="0"><span class="text">Nanded</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-21" tabindex="0"><span class="text">Nandurbar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-22" tabindex="0"><span class="text">Nashik</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-23" tabindex="0"><span class="text">Osmanabad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-24" tabindex="0"><span class="text">Palghar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-25" tabindex="0"><span class="text">Parbhani</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-26" tabindex="0"><span class="text">Pune</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-27" tabindex="0"><span class="text">Raigad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-28" tabindex="0"><span class="text">Ratnagiri</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-29" tabindex="0"><span class="text">Sangli</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-30" tabindex="0"><span class="text">Satara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-31" tabindex="0"><span class="text">Sindhudurg</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-32" tabindex="0"><span class="text">Solapur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-33" tabindex="0"><span class="text">Thane</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-34" tabindex="0"><span class="text">Wardha</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-35" tabindex="0"><span class="text">Washim</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-6-36" tabindex="0"><span class="text">Yavatmal</span></a></li></ul></div></div></div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <input type="text" data-entry="SearchFilter" id="SearchFilter" class="form-control validate-alphanumericWithSpaceAndSomeSpecialChars" placeholder="Name/ Mobile no./PAN No." autocomplete="off">
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="">
+                                                    <span class="inline fontWeight600 mr-2" style="color: #37597D">Details Completed: </span>
+                                                    <div style="width: 80px; display: inline-flex;">
+                                                        <div class="dropdown bootstrap-select form-control"><select data-entry="isCompletedFilter" id="isCompletedFilter" class="form-control selectpicker" tabindex="-98">
+                                                            <option value="2">All</option>
+                                                            <option value="1">Yes</option>
+                                                            <option value="0">No</option>
+                                                        </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-8" aria-haspopup="listbox" aria-expanded="false" data-id="isCompletedFilter" title="All"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-8" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <div class="text-right">
+                                                    <button type="button" class="btn btn-secondary" onclick="onClickSearch(1)" data-btn="Apply"><i class="fa fa-search mr-2"></i>Apply</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dash_table"><div class="table-content"><table class="table dataContentTable dashboard-table table-hover"><thead class="thead-light"><tr><th>Sr.No</th><th>Name</th><th>Mobile No.</th><th>PAN No.</th><th>District</th><th>Address</th><th></th></tr></thead><tbody><tr class="_tablerow" onclick="onClickRow(this, 0)"><td>1</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Bhushankumar Patil">Bhushankumar Patil</span></td><td><span class="mb-0">9730774581</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">ABCDE2545G</span><a href="Uploads\\temporaryProposal\file20210504162131372_1762.jpg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504162131372_1762.jpg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Dhule</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Dhule, maharashtra">Dhule, maharashtra</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 1)"><td>2</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Dipak Umale">Dipak Umale</span></td><td><span class="mb-0">8766882836</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN1234J</span><a href="Uploads\\temporaryProposal\file20210505150512266_4704.jpeg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210505150512266_4704.jpeg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Akola</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="shidaji vetal patur">shidaji vetal patur</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 2)"><td>3</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Uresh Thombre">Uresh Thombre</span></td><td><span class="mb-0">7843002610</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">EXXPS2594H</span><a href="Uploads\\temporaryProposal\file20210505145209291_6446.pdf" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210505145209291_6446.pdf"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Yavatmal</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="yavatmal">yavatmal</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 3)"><td>4</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Pandurang Marathe">Pandurang Marathe</span></td><td><span class="mb-0">7498180845</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN0002W</span><a href="Uploads\\temporaryProposal\file20210504160414876_1745.jpg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504160414876_1745.jpg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Sindhudurg</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="At- Mandkuli, Tal- Kudal, Dist- Sindhudurg">At- Mandkuli, Tal- Kudal, Dist- Sindhudurg</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 4)"><td>5</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Vinod Umale">Vinod Umale</span></td><td><span class="mb-0">9356974464</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN1234H</span><a href="Uploads\\temporaryProposal\file20210504195210138_5968.pdf" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504195210138_5968.pdf"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Akola</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="shidaji vetal patur,tlk.patur Dist.akola">shidaji vetal patur,tlk.patur Dist.akola</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 5)"><td>6</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Rathod And Rathod">Rathod And Rathod</span></td><td><span class="mb-0">7049571125</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">POOJA2125R</span><a href="Uploads\\temporaryProposal\file20210504155548774_211.jpeg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504155548774_211.jpeg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Jalgaon</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="midc jalgaon">midc jalgaon</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 6)"><td>7</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Santosh Pawar">Santosh Pawar</span></td><td><span class="mb-0">8975012259</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN0002Q</span><a href="Uploads\\temporaryProposal\file20210505124728111_9248.jpg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210505124728111_9248.jpg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Sindhudurg</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="At- Pawashi, Tal- Kudal, Dist- sindhudurg.">At- Pawashi, Tal- Kudal, Dist- sindhudurg.</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 7)"><td>8</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Jsw">Jsw</span></td><td><span class="mb-0">9763490528</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN1234Z</span><a href="Uploads\\temporaryProposal\file20210504175440492_6476.jpg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504175440492_6476.jpg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Ratnagiri</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="ratnagiri">ratnagiri</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 8)"><td>9</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Parbhani Raypur">Parbhani Raypur</span></td><td><span class="mb-0">8975412869</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">KJHGF8487U</span><a href="Uploads\\LesseeLicence\file20210504165225641_3151.jpeg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\LesseeLicence\file20210504165225641_3151.jpeg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Parbhani</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="At Post- Raypur, Tal- Parbhani">At Post- Raypur, Tal- Parbhani</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr><tr class="_tablerow" onclick="onClickRow(this, 9)"><td>10</td><td><span class="mb-0 customNoWrap" style="width:250px;" title="Vinayak">Vinayak</span></td><td><span class="mb-0">9405903745</span></td><td><span class="mb-0"><span class="d-inline-block text-uppercase" style="min-width:100px;">NOPAN2233A</span><a href="Uploads\\temporaryProposal\file20210504154832347_1207.jpg" target="_blank" class="form-text mt-0 ml-2 d-inline links" title="http:\demo.mahamining.com\Uploads\temporaryProposal\file20210504154832347_1207.jpg"><i class="fas text-primary mr-1 fa-file-alt"></i></a></span></td><td><span class="mb-0">Ratnagiri</span></td><td><span class="mb-0 customNoWrap" style="width:250px;" title="ratnagiri">ratnagiri</span></td><td><span class="mb-0" title="Details Incomplete"><i class="fa fa-circle text-danger"></i></span></td></tr></tbody></table></div></div>
+                                <div id="tblPagination"><ul class="pagination mb-0 mx-auto justify-content-center" style="width: fit-content;"><li class="page-item active" onclick="onClickPagin(1, this)" pageno="1"><span class="page-link">1</span></li><li class="page-item" onclick="onClickPagin(2, this)" pageno="2"><span class="page-link">2</span></li><li class="page-item" onclick="onClickPagin(3, this)" pageno="3"><span class="page-link">3</span></li><li class="page-item" onclick="onClickPagin(4, this)" pageno="4"><span class="page-link">4</span></li><li class="page-item" onclick="onClickPagin(5, this)" pageno="5"><span class="page-link">5</span></li><li class="page-item" onclick="onClickPagin(6, this)" pageno="6"><span class="page-link">6</span></li><li class="page-item" onclick="onClickPagin(7, this)" pageno="7"><span class="page-link">7</span></li><li class="page-item" onclick="onClickPagin(8, this)" pageno="8"><span class="page-link">8</span></li><li class="page-item" onclick="onClickPagin(9, this)" pageno="9"><span class="page-link">9</span></li><li class="page-item" onclick="onClickPagin(10, this)" pageno="10"><span class="page-link">10</span></li><li class="page-item" onclick="onClickPagin(2, this)" pageno="2"><span class="page-link" title="Go to next page"><i class="fa fa-angle-right mt-1"></i></span></li><li class="page-item" onclick="onClickPagin(1189, this)" pageno="1189"><span class="page-link" title="Go to last page"><i class="fa fa-angle-double-right mt-1"></i></span></li></ul></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade submit-modal" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="top-close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="model-check">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h3 id="Smessage"></h3>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-info mb-0" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    </div>
+
+                    
+                </div>

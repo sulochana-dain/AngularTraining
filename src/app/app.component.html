@@ -1,59 +1,39 @@
 
-<div class="container pen">
-  <div class="row">
-    <div class="col-sm-12">
 
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" target="_blank">Brand</a>
-        </div> -->
-
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a class="nav-link" href="/home" routerLinkActive="active">Home </a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" routerLink="/about" routerLinkActive="active">About <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" routerLink="/system-overview" routerLinkActive="active">System Overview</a></li>
-                <li><a href="#" routerLink="/minerals" routerLinkActive="active">Minerals</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-
-    </div>
-  </div>
-</div>
-
-
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <!-- <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> -->
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item active">
-      <a class="nav-link" href="/home" routerLinkActive="active">Home <span class="sr-only">Home</span></a>
+      <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">Home</span></a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" routerLink="/about" routerLinkActive="active">About <span class="sr-only">About</span></a>
+      <a class="nav-link" routerLink="/component1" routerLinkActive="active">List <span class="sr-only">List</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/lesseeLicenceRegistration" routerLinkActive="active">Lessee / Licence Register<span class="sr-only">Lessee / Licence Register</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link"  routerLink="/about" routerLinkActive="active">About <span class="sr-only">About</span></a>
+      <ul class=" mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="about/system-overview">System Overview <span class="sr-only">System Overview</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="about/minerals">Minerals <span class="sr-only">Minerals</span></a>
+
+        </li>
+
+      </ul>
     </li>
 
   </ul>
 
 
 </div>
-</nav>-->
+</nav>
 <router-outlet></router-outlet>

@@ -10,8 +10,9 @@ import { Component1Component } from './component1/component1.component';
 import { Component2Component } from './component2/component2.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { SystemOverviewComponent } from './system-overview/system-overview.component';
-import { MineralsComponent } from './minerals/minerals.component';
+import { SystemOverviewComponent } from './about/system-overview/system-overview.component';
+import { MineralsComponent } from './about/minerals/minerals.component';
+import { LesseeLicenceRegistrationComponent } from './lessee-licence-registration/lessee-licence-registration.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MineralsComponent } from './minerals/minerals.component';
     HomeComponent,
     AboutComponent,
     SystemOverviewComponent,
-    MineralsComponent
+    MineralsComponent,
+    LesseeLicenceRegistrationComponent
   ],
   imports: [
     BrowserModule,
